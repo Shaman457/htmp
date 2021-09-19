@@ -1,0 +1,226 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+.box{
+	width: 100%;
+	margin: 0 auto;
+}
+#header{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+nav{
+	width: 100%;
+	background: white;
+}
+nav div{
+	float: left;
+}
+.div_icon{
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.div_links{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 70%;
+}
+a{
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 30%;
+	text-decoration: none;
+	color: #79818d;
+}
+#icon{
+	width: 50%;
+	margin-left: 20%;
+}
+.header_block{
+	width: 100%;
+	background: url(../img/header.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.headlines{
+	width: 80%;
+	display: flex;
+	color: white;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	line-height: 50px;
+}
+#email{
+	width: 70%;
+	height: 50px;
+	float: left;
+	border-radius: 10px;
+	border: none;
+}
+#button{
+	width: 20%;
+	margin-left: 10%;
+	float: left;
+	height: 50px;
+	background: #77c344;
+	border: none;
+	color: white;
+	border-radius: 10px;
+}
+.headlines label{
+	width: 50%;
+	margin-top: 30px;
+	height: 60px;
+}
+#about_us{
+	width: 100%;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+}
+.headline_section{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.article{
+	width: 50%;
+	float: left;
+}
+.block_article{
+	width: 100%;
+	margin-top: 30px;
+}
+.article_img{
+	background: url(../img/aboutUs.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.content p{
+	color: #5d6471;
+}
+.content{
+	width: 80%;
+	float: right;
+	display: flex;
+	flex-direction: column;
+}
+.content h3{
+	line-height: 50px;
+	margin-bottom: 3px;
+}
+.icon{
+	margin-right: 5%;
+	width: 5%;
+}
+#work{
+	width: 100%;
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+	background: #f6f6f7;
+}
+.article_work{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.work_img{
+	width: 100%;
+}
+p{
+	font-size: 12px;
+}
+#contact{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: 50px;
+}
+#contact label{
+	width: 80%;
+	margin-top: 30px;
+	height: 60px;
+}
+#email2{
+	width: 65%;
+	height: 50px;
+	float: left;
+	border-radius: 10px;
+}
+#button2{
+	width: 25%;
+	margin-left: 10%;
+	float: left;
+	height: 50px;
+	background: #77c344;
+	border: none;
+	color: white;
+}
+.block{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: 50px;
+}
+#footer{
+	width: 100%;
+	background: #f2f2f2;
+}
+footer div{
+	float: left;
+}
+.footer_div_links{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+}
+footer a{
+	width: 20%;
+	margin: 0 -3% 0 -3%;
+	text-decoration: none;
+	color: #79818d;
+	text-align: center;
+}
+/* Style the navbar */
+#nav {
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}

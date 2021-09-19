@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/animate.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</head>
+<body>
+	<div class="box">
+		<header id="header">
+			<nav id="nav">
+				<div class="div_icon">
+					<img id="icon" src="img/ico.png">
+				</div>
+				<div class="div_links">
+					<a href="#work">HOW IT WORKS</a>
+					<a href="#about_us">ABOUT US</a>
+					<a href="#contact">CONTACT US</a>
+					<a href="#footer" style="margin-right: 5%;">BLOG</a>
+				</div>
+			</nav>
+			<div class="header_block">
+				<div class="headlines wow animate__fadeInLeft" data-wow-duration="2s">
+					<h1>TRACK YOUR NEXT<br> FUEL SHOPS</h1>
+					<p>Monitor and Alert on all petrol bunks near to you</p>
+					<p style="margin-top: 50px;">Signup For <b style="background: #ffce54; border-radius: 5px; padding: 5px 8px 5px 8px;">FREE</b></p>
+					<label>
+						<input id="email" type="text" placeholder="Your E-mail Adress">
+						<input id="button" type="button" value="SIGNUP">
+					</label>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section id="about_us">
+				<div class="headline_section wow animate__fadeInUp" data-wow-duration="2s">
+					<h2 style="color: #5d6471;">WHY THANK APP?</h2>
+				</div>
+				<div class="block_article">
+					<article style="margin-top: 50px; margin-right: 5%; width: 45%;" class="article content_article wow animate__fadeIn" data-wow-duration="2s">
+						<div class="content">
+							<h3><img class="icon" src="img/icon.png">Reliable and Secure Platform</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat</p>
+						</div>
+						<div class="content">
+							<h3><img class="icon" src="img/stopwatch.png">Everything is perfectly organized</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat</p>
+						</div>
+						<div class="content">
+							<h3><img class="icon" src="img/tweet.png">Rapid customer suport</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat</p>
+						</div>
+						<div class="content">
+							<h3><img class="icon" src="img/ico2.png">Reliable and Secure Platform</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat</p>
+						</div>
+					</article>
+					<article class="article article_img wow animate__fadeIn" data-wow-duration="2s"></article>
+				</div>
+			</section>
+			<section id="work">
+				<div style="margin:5% 0 5% 0;" class="headline_section wow animate__fadeInUp" data-wow-duration="2s">
+					<h2 style="color: #5d6471;">WHY THANK APP DIFFRENT?</h2>
+				</div>
+				<div class="block_article">
+					<article style="margin-top: 50px;" class="article article2 content_article wow animate__fadeIn" data-wow-duration="2s">
+						<div class="content">
+							<h3><img class="icon" src="img/icon.png">Works on any device anyware</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat</p>
+						</div>
+					</article>
+					<article class="wow animate__fadeIn article article2 article_work" data-wow-duration="2s">
+						<img src="layer.png" class="work_img">
+					</article>
+				</div>
+			</section>
+			<section id="contact">
+				<div class="block">
+					<h2 style="color: #5d6471; margin-bottom: 5%;">SAVE TIME & GAIN AGILITY</h2>
+					<p style="color: #5d6471; font-style: italic; font-size: 20px;">Using our cloud Monitoring Services So you can Focous on Runing</p>
+					<label>
+						<input id="email2" type="text" placeholder="Your E-mail Adress">
+						<input id="button2" type="button" value="SIGN UP">
+					</label>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="div_icon">
+				<img id="icon" src="img/icon2.png">
+			</div>
+			<div class="footer_div_links">
+				<a style="margin-left: 25%;" href="#header">HOME</a>
+				<a href="#about_us">ABOUT US</a>
+				<a href="#contact">CONTACT US</a>
+				<a href="#footer">BLOG</a>
+			</div>
+		</footer>
+	</div>	
+	<script type="text/javascript">
+		let windowHeight = $(window).height();
+		$("#header").css({"height": windowHeight+"px"});
+		$("#nav").css({"height": windowHeight/10+"px"});
+		$("#nav>div").css({"height": windowHeight/10+"px"});
+		$(".header_block").css({"height": windowHeight - windowHeight/10+"px"})
+		let blockH =$(".header_block").height();
+		let navH = $("#nav").height();
+		$(".headlines").css({"height": blockH/1.5+"px"});
+		$("section").css({"height": windowHeight + "px"});
+		$(".headline_section").css({"height": navH*3 + "px"});
+		$(".block_article").css({"height": windowHeight+200 - navH*2+"px"});
+		$(".article").css({"height": windowHeight+200 - navH*2+"px"});
+		let articleH = $(".content_article").height();
+		$(".content").css({"height": articleH/4.5 +"px"});
+		$("#work").css({"height": windowHeight + "px"});
+		$(".article2").css({"height": (windowHeight+200 - navH*2)/3+"px"});
+		$("#footer").css({"height": windowHeight/8+"px"});
+		$("#footer>div").css({"height": windowHeight/8+"px"});
+		// When the user scrolls the page, execute myFunction
+		window.onscroll = function() {myFunction()};
+
+		// Get the navbar
+		var navbar = document.getElementById("nav");
+
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+</script>
+</body>
+</html>
